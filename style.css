@@ -1,0 +1,352 @@
+@charset "UTF-8";
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Meiryo, "メイリオ", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+.image, .about, .flow, .fee {
+    padding: 50px 0;
+  }
+button {
+    background: none;
+    border: none;
+ }
+ /* ヘッダー */
+ .btn-menu {
+    display: none;
+ }
+ 
+.title{
+    position: relative;
+    left: 195px;
+    top: 20px;
+    width: fit-content;
+    padding: 20px;
+}
+.nav-lists{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0 256px 0 256px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.nav-lists li{
+    list-style-type: none;
+}
+.nav-lists li img{
+    margin-right: 6px;
+}
+.nav-lists li a{
+    text-decoration: none;
+    color: #463729;
+    margin-right: 30px;
+    font-family: vdl-megamaru, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+.head{
+    width: 100vw;
+    margin-top: 20px;
+    height: auto;
+}
+.info{
+ border: solid 7px #55b75a;;
+ border-radius: 20px;
+ margin: 50px auto;
+ width:90%
+}
+.news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0;
+}
+.news h3{
+    padding-left: 10px;
+}
+.news-items{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.news-items li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center; 
+}
+.news-items li span{
+    padding:30px;
+}
+/*きのめ保育園について*/
+.about{
+    background-color: #fff4ea;
+}
+.about-title{
+    color: #463729;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: vdl-megamaru, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}
+.about-nav{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.about-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+.about-nav li{
+    list-style-type: none;
+    padding-right: 5.5%;
+    padding-bottom: 20px;
+}
+.about-nav li:nth-of-type(3){
+    list-style-type: none;
+    padding-right: 0;
+}
+.about-nav li:nth-of-type(5){
+    list-style-type: none;
+    padding-right: 0;
+}
+.round{
+    border-radius: 50%;
+}
+.about-nav ul li a{
+   text-decoration: none;
+   color: #463729;
+   text-align: center;
+}
+.arrow{
+    text-align: center;
+}
+.arrow::before{
+    content: url(img/arrow@2x.jpg);
+    display:inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+/*１日の流れ*/
+.flow{
+}
+.flow-title{
+    color: #463729;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    font-family: vdl-megamaru, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 400;
+}
+.flow-nav{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.flow-nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+.flow-nav li{
+    list-style-type: none;
+}
+.flow-nav ul li a{
+    text-decoration: none;
+    color: #463729;
+    text-align: center;
+}
+/*料金*/
+.fee{
+    background-color: #fff4ea;
+}
+.fee-title{
+    color: #463729;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    font-family: vdl-megamaru, sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 400;
+}
+.fee-nav{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.fee-nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.fee-nav li{
+    list-style-type: none;
+}
+.fee-nav ul li a{
+    text-decoration: none;
+    color: #463729;
+    text-align: center;
+}
+small p{
+    padding-top: 100px;
+    text-align: center;
+}
+@media screen and (max-width:800px){
+body{
+    margin:0 auto;
+}
+ .btn-menu {
+        display: block;
+        position: fixed;
+        z-index: 2;
+        top: 10px;
+        right: 0px;
+        width: 50px;
+        height: 50px;
+        background: rgba(250, 250, 250, 0.8);
+}
+.btn-menu-lines {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    margin: auto;
+    background: gray;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.btn-menu-lines::before, .btn-menu-lines::after {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: gray;
+    content: "";
+    -webkit-transition:.3s;
+    transition:.3s;
+    -webkit-transform-origin: 2.85714px center;
+    -ms-transform-origin: 2.85714px center;
+    transform-origin: 2.85714px center;
+}
+.btn-menu-lines::before {
+    top: 10px;
+}
+.btn-menu-lines::after {
+    top: -10px;
+}
+.btn-menu.is-animate .btn-menu-lines {
+    background: none;
+}
+.btn-menu.is-animate .btn-menu-lines::before {
+    -webkit-transform: rotate3d(0, 0, 2, 45deg);
+    transform: rotate3d(0, 0, 2, 45deg);
+    transform-origin: 50% 50%;
+    top: 0;
+}
+.btn-menu.is-animate .btn-menu-lines::after {
+    -webkit-transform: rotate3d(0, 0, 2, -45deg);
+    transform: rotate3d(0, 0, 2, -45deg);
+    transform-origin: 50% 50%;
+    top: 0;
+}
+.nav{
+    position: fixed;
+    background: rgba(250, 250, 250, 0.8);
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.nav-lists {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding:0;
+  }
+.nav-lists > li {
+    display: flex;
+    text-align: center;
+    padding: 20px 0;
+}
+.nav-lists li a{
+    margin: 0 auto;
+}
+.title{
+    position: unset;
+    width: max-content;
+    padding: 0px;
+    margin: 0 auto;
+}
+.title img{
+    margin: 0 auto;
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+.info{
+    max-width: 90%;
+}
+.news{
+    margin: 0 auto;
+    width: 100%;
+}
+.news h3{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.news-items{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.news-items li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+.news-items li span{
+    padding:10px;
+}
+.about-nav li{
+    margin: 0 auto;
+    padding:50px;
+}
+.about-nav li:nth-of-type(3){
+    margin: 0 auto;
+    padding:50px;
+}
+.about-nav li:nth-of-type(5){
+    margin: 0 auto;
+    padding:50px;
+}
+small p{
+    padding: 50px;
+}
+}
