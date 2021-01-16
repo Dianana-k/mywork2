@@ -210,6 +210,101 @@ small p{
     padding-top: 100px;
     text-align: center;
 }
+.content-about{
+    width: 100%;
+    margin-top: 20px;
+    padding: 0;
+    background-color: #fff4ea;
+    margin-bottom: 40px;
+}
+.content-about_title{
+    font-size: 28px;
+    color: #463729;
+    padding: 60px;
+    text-align: center;
+}
+.section{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.sub-title{
+    background-color: #fff4ea;
+    margin-bottom: 25px;
+    margin-top: 50px;
+}
+.sub-title-text{
+    color: #463729;
+    font-size: 22px;
+    padding: 20px;
+}
+.sub-title-text img{
+    margin-right: 6px;
+}
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+.list-title{
+    background-color: #d3efd2;
+    padding: 20px 0 20px 10px;
+    color: #463729;
+}
+.list-item{
+    background-color:#eaf7e9 ;
+    padding: 20px 0 20px 10px;
+    color: #463729;
+}
+.liststyle{
+    color: #463729;
+    list-style-type: none;
+}
+.liststyle dt{
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.liststyle dd{
+    margin: 0;
+    padding-bottom: 10px;
+}
+.purpose-list{
+    color: #463729;
+    padding: 0;
+}
+.purpose-list p{
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.purpose-list img{
+    margin-right: 6px;
+}
+.box{
+    border-radius:5px;
+    background-color: #e95563;
+    width: 100px;
+    height: 45px;
+    color:#fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.flow-content{
+    margin-bottom: 20px;
+    display: flex;
+}
+.box-after{
+    color: #e95563;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+.box-after_text{
+    padding-bottom: 10px;
+}
+small p{
+    padding-top: 160px;
+    text-align: center;
+}
 @media screen and (max-width:800px){
 body{
     margin:0 auto;
@@ -278,6 +373,7 @@ body{
     top:0;
     width: 100%;
     height: 100%;
+    display: none;
 }
 .nav-lists {
     flex-direction: column;
@@ -348,5 +444,9 @@ main{
 }
 small p{
     padding: 50px;
+}
+.main{
+    width: 90%;
+    margin: 0 auto;
 }
 }
