@@ -20,6 +20,17 @@ if (!$this.hasClass(isOpen)) {
     $this.removeClass(isOpen).removeClass(isAnimate);
 }
 });
+$nav.on('click', function () {
+  
+    const $this = $(this);
+    if ($nav.is(':animated')) {
+        return;
+    }
+    if ($this.slideDown()) {
+        $this.slideUp();
+        $btnMenu.removeClass(isOpen).removeClass(isAnimate);
+    }
+    });
 //ウィンドウ幅を変えた時の記述
 $win.on('resize', function () {
 if ($win.width() > 800) {
